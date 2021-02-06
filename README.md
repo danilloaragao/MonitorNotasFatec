@@ -4,8 +4,10 @@ O monitor de notas é um "robô" programado em C# (console application) cujo obj
 
 O robô funciona para qualquer curso da FATEC-SP.
 
-### Funcionamento
-Ao executar o MonitorNotas.EXE, será solicitado o RA, a Senha de acesso do portal da faculdade e, opcionalmente, um e-mail para notificar o lançamento das notas.
+## Instalação
+Para utilizar o monitor de notas, basta copiar os arquivos "MonitorNotas.exe" e "MonitorNotas.pdb" para o seu computador e executar o "MonitorNotas.exe".
+
+Ao executar o "MonitorNotas.EXE", será solicitado o RA, a Senha de acesso do portal da faculdade e, opcionalmente, um e-mail para notificar o lançamento das notas.
 Após preencher os dados solicitados, o robô irá acessar o portal da faculdade com o seu login e senha para coletar as notas atuais e mostrá-las na tela, e então entrará em stand-by.
 A cada 30 minutos o robô acessa novamente o portal, se não houve nenhum lançamento novo de notas, o robô irá exibir a data e a hora de execução e a mensagem "Processado com sucesso - Sem atualizações".
 Caso ele encontre alguma lançamento novo de notas, ele mostrará as notas na tela, caso o e-mail tenha sido preenchido, ele disparará um e-mail automaticamente com todas as notas que foram lançadas até o momento.
@@ -13,3 +15,11 @@ Caso ocorra alguma falha no processamento, o robô irá exibir a data e a hora d
 Caso o RA ou a senha esteja incorreto, o robô irá informar em tela, e aguardará que qualquer tecla seja pressionada para que ele encerre a execução.
 
 O robô não grava ou compartilha o RA e senha dos usuários, ele mantém essas informações em memória apenas enquanto está sendo executado, portanto, ao encerrar e executar novamente as informações serão solicitadas.
+
+## Autores
+
+* **Danillo Felipe Aragão** - [GitHub](https://github.com/danilloaragao)
+
+## Licença
+
+Esse projeto é licenciado pela licença MIT - see the [LICENSE.md](LICENSE.md) file for details
